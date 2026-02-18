@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="122車公求籤 - 誠心求籤，預測運程。事業、財運、感情、健康各方面指引。車公大將軍保佑，心誠則靈！">
+    <meta name="keywords" content="122車公, 求籤, 運程, 車公, 籤文">
+    <meta name="author" content="122車公求籤">
+    
+    <!-- Open Graph / WhatsApp分享預覽 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://122chekung.example.com">
+    <meta property="og:title" content="122車公求籤 🎋">
+    <meta property="og:description" content="誠心求籤預測運程！立即求籤睇下你嘅事業、財運、感情、健康運勢。車公大將軍保佑，心誠則靈！🇭🇰">
+    <meta property="og:site_name" content="122車公求籤">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:image" content="https://122chekung.example.com/static/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <title>122車公求籤</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hongkong-skyline">
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building tall"></div>
+                <div class="building"></div>
+                <div class="building tall"></div>
+            </div>
+            <h1 class="title">122車公求籤</h1>
+            <p class="subtitle">誠心誠意 · 心誠則靈</p>
+        </header>
+
+        <main class="main-content">
+            <div class="temple-decoration">
+                <div class="lantern left">🏮</div>
+                <div class="temple-icon">⛩️</div>
+                <div class="lantern right">🏮</div>
+            </div>
+
+            <div class="intro-section">
+                <div class="app-info">
+                    <p class="info-badge">📱 122車公靈籤</p>
+                    <p class="info-desc">傳統車公求籤體驗，預測你嘅事業、財運、感情、健康</p>
+                    <div class="stats-bar">
+                        <span class="stat-item" id="totalSticks">🎋 30支籤文</span>
+                        <span class="stat-item" id="drawCount">📊 已求 0 次</span>
+                    </div>
+                </div>
+                <p class="intro-text">誠心誠意，靜心求籤</p>
+                <p class="instruction">請先誠心默念所求之事，然後點擊「求籤」按鈕</p>
+            </div>
+
+            <div class="fortune-container">
+                <div class="fortune-tube" id="fortuneTube">
+                    <div class="tube-body">
+                        <div class="sticks-preview">
+                            <div class="stick-mini"></div>
+                            <div class="stick-mini"></div>
+                            <div class="stick-mini"></div>
+                            <div class="stick-mini"></div>
+                            <div class="stick-mini"></div>
+                        </div>
+                    </div>
+                    <div class="tube-cap"></div>
+                </div>
+
+                <button class="draw-btn" id="drawBtn">
+                    <span class="btn-icon">🎋</span>
+                    <span class="btn-text">誠心求籤</span>
+                </button>
+            </div>
+
+            <div class="result-container hidden" id="resultContainer">
+                <div class="fortune-card">
+                    <div class="card-header">
+                        <span class="fortune-number" id="fortuneNumber"></span>
+                        <span class="fortune-type" id="fortuneType"></span>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="poem-section">
+                            <h3>籤詩</h3>
+                            <div class="poem-text" id="poemText"></div>
+                        </div>
+
+                        <div class="meaning-section">
+                            <h3>解曰</h3>
+                            <p id="fortuneMeaning"></p>
+                        </div>
+
+                        <div class="aspects-section">
+                            <div class="aspect-card career">
+                                <span class="aspect-icon">💼</span>
+                                <span class="aspect-title">事業</span>
+                                <p id="aspectCareer"></p>
+                            </div>
+                            <div class="aspect-card wealth">
+                                <span class="aspect-icon">💰</span>
+                                <span class="aspect-title">財運</span>
+                                <p id="aspectWealth"></p>
+                            </div>
+                            <div class="aspect-card love">
+                                <span class="aspect-icon">💕</span>
+                                <span class="aspect-title">感情</span>
+                                <p id="aspectLove"></p>
+                            </div>
+                            <div class="aspect-card health">
+                                <span class="aspect-icon">🏥</span>
+                                <span class="aspect-title">健康</span>
+                                <p id="aspectHealth"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="action-buttons-row">
+                            <button class="redraw-btn" id="redrawBtn">
+                                <span>🔄</span> 再求一籤
+                            </button>
+                            <button class="share-btn" id="shareBtn">
+                                <span>📤</span> 分享結果
+                            </button>
+                        </div>
+                        <a href="/hk-outlook" class="hk-outlook-link" id="hkOutlookLink">🇭🇰 根據求得嘅籤文解讀香港展望</a>
+                        <div class="share-notification hidden" id="shareNotification">
+                            ✅ 已複製到剪貼簿！
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blessing-section">
+                <div class="blessing-text">
+                    <p>車公大將軍保佑</p>
+                    <p>身體健康 · 出入平安 · 心想事成</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="hk-elements">
+                <span>🇭🇰</span>
+                <span>🌸</span>
+                <span>🎋</span>
+                <span>⛩️</span>
+                <span>🏮</span>
+            </div>
+            <p>122車公 · 百年靈驗</p>
+        </footer>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay hidden" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="spinning-sticks">🎋</div>
+            <p>誠心求籤中...</p>
+            <div class="loading-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.14.0.2:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 913-705-052
+127.0.0.1 - - [18/Feb/2026 11:13:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:13:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:13:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:13:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:13:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:13:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:13:39] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:13:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [18/Feb/2026 11:15:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:15:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:15:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:15:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:15:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:15:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [18/Feb/2026 11:15:26] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:15:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [18/Feb/2026 11:15:34] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:15:42] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:15:48] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:15:55] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:16:05] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:16:11] "GET /api/draw HTTP/1.1" 200 -
+127.0.0.1 - - [18/Feb/2026 11:16:17] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:07:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+182.239.122.83 - - [18/Feb/2026 12:10:14] "GET / HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:10:16] "GET /static/style.css HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:10:16] "GET /static/script.js HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:22:11] "GET / HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:22:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:22:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:22:25] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:22:41] "GET / HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:22:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:22:41] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:22:51] "GET / HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:22:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:22:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:34:29] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:34:38] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:35:15] "GET /hk-outlook?fortune=6 HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:35:16] "GET /hk-outlook?fortune=6 HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:35:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+182.239.122.83 - - [18/Feb/2026 12:36:38] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:37:22] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:38:33] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:38:42] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:38:46] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 12:39:18] "GET /api/draw HTTP/1.1" 200 -
+182.239.122.83 - - [18/Feb/2026 13:00:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+182.239.122.83 - - [18/Feb/2026 13:00:28] "GET /api/draw HTTP/1.1" 200 -
+192.168.128.127 - - [18/Feb/2026 13:16:53] "GET / HTTP/1.1" 200 -
+192.168.128.127 - - [18/Feb/2026 13:16:53] "GET /static/style.css HTTP/1.1" 200 -
+192.168.128.127 - - [18/Feb/2026 13:16:53] "GET /static/script.js HTTP/1.1" 200 -
+192.168.128.127 - - [18/Feb/2026 13:16:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.128.127 - - [18/Feb/2026 13:17:17] "GET /api/draw HTTP/1.1" 200 -
+167.94.138.41 - - [18/Feb/2026 13:47:07] code 400, message Bad request version ('À\x14À')
+167.94.138.41 - - [18/Feb/2026 13:47:07] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x031\x90nìzwa\x9czOÚ¾B>\x886(\x97\x9d\x07Åò\x82\x16<©³p¾\x03\x9d1 §Xí·\x1cC9(\x1fä\x99S°DdÉw4Õý~K©.ÈcW\x97®Êå\x8a\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.41 - - [18/Feb/2026 13:47:14] "GET / HTTP/1.1" 200 -
+167.94.138.41 - - [18/Feb/2026 13:47:22] code 400, message Bad request version ('À\x14À')
+167.94.138.41 - - [18/Feb/2026 13:47:22] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03t|Mm¦\x84ÃG\x1e\x9ax\x18¿¥÷.ã\x17\x0f\\Ê$\x90©6!K/s;GÙ Ù;c÷©¹yØ\x0b\x98ä¨U\x943¿\x81;L\x90¯¯B}\x97ëßÃÕQ\x02\x96\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.41 - - [18/Feb/2026 13:47:24] "GET / HTTP/1.1" 200 -
+167.94.138.41 - - [18/Feb/2026 13:47:27] code 505, message Invalid HTTP version (2.0)
+167.94.138.41 - - [18/Feb/2026 13:47:27] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.41 - - [18/Feb/2026 13:47:47] code 400, message Bad request version ('À\x14À')
+167.94.138.41 - - [18/Feb/2026 13:47:47] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03mÚ$\x85\x01$\x1d\x9d¬- ·°ëõ\x87PO¦[0)ø,!ë\x12O\x00\x0f\x0cÇ ÙøÂT÷\x9fÂ\x8biAl$2[ÿ\x84{ÍñGi£¨¾\x91\x92ñ8:\x14jû\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.41 - - [18/Feb/2026 13:47:48] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+64.62.156.132 - - [18/Feb/2026 13:59:38] code 400, message Bad request version ('À\x14À')
+64.62.156.132 - - [18/Feb/2026 13:59:38] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ÃÞ§P§ãÌd\x9e³æ+\x1c\x0b"Ëþ?\x8a58:Q"cÉ;\x0f£ã\x86¶\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:04] code 400, message Bad request version ('GetClassName\x00\x00\x00\x02\x04\x00\x00\x00\x00\x01\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:04] "[35m[1m\x00\x00\x00\x1f\x00\x00\x00\x00\x00\x00\x00\x0cGetClassName\x00\x00\x00\x02\x04\x00\x00\x00\x00\x01\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:05] "GET / HTTP/1.0" 200 -
+172.232.232.179 - - [18/Feb/2026 14:24:05] "OPTIONS / HTTP/1.0" 200 -
+172.232.232.179 - - [18/Feb/2026 14:24:05] code 400, message Bad request version ('RTSP/1.0')
+172.232.232.179 - - [18/Feb/2026 14:24:05] "[35m[1mOPTIONS / RTSP/1.0[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:10] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:11] "[35m[1m\x80\x00\x00(rþ\x1d\x13\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:16] code 400, message Bad HTTP/0.9 request type ('\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:16] "[35m[1m\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:21] code 400, message Bad HTTP/0.9 request type ('\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:21] "[35m[1m\x00\x0c\x00\x00\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:21] code 400, message Bad request syntax ('HELP')
+172.232.232.179 - - [18/Feb/2026 14:24:21] "[35m[1mHELP[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:21] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:21] "[35m[1m\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:21] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+172.232.232.179 - - [18/Feb/2026 14:24:21] "[35m[1m\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nmap[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:21] code 400, message Bad request version ('\x00/\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:21] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:21] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+172.232.232.179 - - [18/Feb/2026 14:24:21] "[35m[1m\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:26] code 400, message Bad request version ('0.12\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:26] "[35m[1m\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:32] code 400, message Bad HTTP/0.9 request type ('l\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:32] "[35m[1ml\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:32] "[33mGET /nice%20ports,/Trinity.txt.bak HTTP/1.0[0m" 404 -
+172.232.232.179 - - [18/Feb/2026 14:24:32] code 400, message Bad request syntax ('\x01default')
+172.232.232.179 - - [18/Feb/2026 14:24:32] "[35m[1m\x01default[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:32] code 400, message Bad request syntax ('0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:32] "[35m[1m0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:37] code 400, message Bad HTTP/0.9 request type ('0')
+172.232.232.179 - - [18/Feb/2026 14:24:37] "[35m[1m0\x0c\x02\x01\x01`\x07\x02\x01\x02\x04\x00\x80\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:37] code 400, message Bad request version ('SIP/2.0')
+172.232.232.179 - - [18/Feb/2026 14:24:37] "[35m[1mOPTIONS sip:nm SIP/2.0[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:42] code 400, message Bad request syntax ('TNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:42] "[35m[1mTNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:24:48] "[35m[1m\x03\x00\x00\x0b\x06à\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:53] code 400, message Bad request syntax ('DmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13')
+172.232.232.179 - - [18/Feb/2026 14:24:53] "[35m[1mDmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:24:58] code 400, message Bad HTTP/0.9 request type (':\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@')
+172.232.232.179 - - [18/Feb/2026 14:24:58] "[35m[1m:\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:03] code 400, message Bad request syntax ('JRMI\x00\x02K')
+172.232.232.179 - - [18/Feb/2026 14:25:03] "[35m[1mJRMI\x00\x02K[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:08] code 400, message Bad request version ('\x00{\x000\x000\x000\x000\x00A\x00A\x000\x000\x00-\x000\x00A\x000\x000\x00-\x000\x000\x00a\x000\x00-\x00A\x00A\x000\x00A\x00-\x000\x000\x000\x000\x00A\x000\x00A\x00A\x000\x00A\x00A\x000\x00}\x00\x00\x00àmß_')
+172.232.232.179 - - [18/Feb/2026 14:25:08] "[35m[1m\x01\x00\x00ýÎú\x0b° \x00\x00\x00MMS\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x12\x00\x00\x00\x01\x00\x03\x00ðððð\x0b\x00\x04\x00\x1c\x00\x03\x00N\x00S\x00P\x00l\x00a\x00y\x00e\x00r\x00/\x009\x00.\x000\x00.\x000\x00.\x002\x009\x008\x000\x00;\x00 \x00{\x000\x000\x000\x000\x00A\x00A\x000\x000\x00-\x000\x00A\x000\x000\x00-\x000\x000\x00a\x000\x00-\x00A\x00A\x000\x00A\x00-\x000\x000\x000\x000\x00A\x000\x00A\x00A\x000\x00A\x00A\x000\x00}\x00\x00\x00àmß_[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:13] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:13] "[35m[1m\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00 \x00:\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x004æ\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00(CONNECT_DATA=(COMMAND=version))[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:18] code 400, message Bad request version ('\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:18] "[35m[1m\x12\x01\x004\x00\x00\x00\x00\x00\x00\x15\x00\x06\x01\x00\x1b\x00\x01\x02\x00\x1c\x00\x0c\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:23] code 400, message Bad request syntax ('\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:23] "[35m[1m\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:28] code 400, message Bad request syntax ('GIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:28] "[35m[1mGIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:33] code 400, message Bad HTTP/0.9 request type ('AMQP\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:33] "[35m[1mAMQP\x00\x00\x09\x01[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:34] "[33mGET /devicedesc.xml HTTP/1.1[0m" 404 -
+172.232.232.179 - - [18/Feb/2026 14:25:34] code 400, message Bad request syntax ('CONNECT')
+172.232.232.179 - - [18/Feb/2026 14:25:34] "[35m[1mCONNECT[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:39] code 400, message Bad HTTP/0.9 request type ('¤\x00\x00\x00\x00\x00\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:39] "[35m[1m¤\x00\x00\x00\x00\x00\x00\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00¤\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:44] code 400, message Bad request syntax ('\x01\x00\x00\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:44] "[35m[1m\x01\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:44] code 400, message Bad request version ('\x00/\x00')
+172.232.232.179 - - [18/Feb/2026 14:25:44] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:49] "GET / HTTP/1.1" 200 -
+172.232.232.179 - - [18/Feb/2026 14:25:54] code 400, message Bad request version ("OÕU}lU%FÃ°·\x82\x17å\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+172.232.232.179 - - [18/Feb/2026 14:25:54] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03iÄ$A\x1cò\x9c7-\x0eG\\\x81©\x84ôæ9FÕ<\x8cÏ2>m¦þú9øK õÈ\x9eµp²¥Ê/÷wËã\x85C]Ù\x1dOÕU}lU%FÃ°·\x82\x17å\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À­À£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À[0m" HTTPStatus.BAD_REQUEST -
+172.232.232.179 - - [18/Feb/2026 14:25:56] code 400, message Bad HTTP/0.9 request type ('\x80\x00\x00(\x03F\x1a\x8c\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86')
+172.232.232.179 - - [18/Feb/2026 14:25:56] "[35m[1m\x80\x00\x00(\x03F\x1a\x8c\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+192.168.128.136 - - [18/Feb/2026 14:33:31] "GET / HTTP/1.1" 200 -
+192.168.128.136 - - [18/Feb/2026 14:33:31] "GET /static/style.css HTTP/1.1" 200 -
+192.168.128.136 - - [18/Feb/2026 14:33:31] "GET /static/script.js HTTP/1.1" 200 -
+192.168.128.136 - - [18/Feb/2026 14:33:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+182.239.89.249 - - [18/Feb/2026 14:51:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.128.1 - - [18/Feb/2026 20:01:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [18/Feb/2026 20:28:42] "GET /api/draw HTTP/1.1" 200 -
+192.168.128.61 - - [18/Feb/2026 20:35:28] "GET / HTTP/1.1" 200 -
+192.168.128.61 - - [18/Feb/2026 20:35:30] "GET /static/style.css HTTP/1.1" 200 -
+192.168.128.61 - - [18/Feb/2026 20:35:31] "GET /static/script.js HTTP/1.1" 200 -

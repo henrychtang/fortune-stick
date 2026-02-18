@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="根據122車公籤文解讀香港來年運程 - 經濟、金融、社會、健康各方面展望。車公大將軍指引香港前路！">
+    <meta name="keywords" content="香港運程, 122車公, 求籤, 香港展望, 運勢預測">
+    <meta name="author" content="122車公求籤">
+    
+    <!-- Open Graph / WhatsApp分享預覽 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="香港來年展望 🇭🇰 122車公籤文解讀">
+    <meta property="og:description" content="根據求得嘅籤文，預測香港嚟緊嘅經濟、金融、社會同健康運程。睇下車公大將軍點指引香港前路！🎋">
+    <meta property="og:site_name" content="122車公求籤">
+    <meta property="og:locale" content="zh_HK">
+    
+    <title>香港來年展望 🇭🇰 122車公籤文解讀</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .hk-outlook-page {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+        
+        .outlook-header {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5c2 50%, #d4af37 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #8b0000;
+        }
+        
+        .outlook-header h1 {
+            color: #8b0000;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .outlook-header .year-badge {
+            display: inline-block;
+            background: #8b0000;
+            color: #ffd700;
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .outlook-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .fortune-highlight {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff 100%);
+            border: 3px solid #d4af37;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .fortune-highlight::before {
+            content: '🎋';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 3em;
+            opacity: 0.2;
+        }
+        
+        .fortune-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #d4af37;
+        }
+        
+        .fortune-number-large {
+            font-size: 2em;
+            color: #8b0000;
+            font-weight: bold;
+        }
+        
+        .fortune-type-badge {
+            display: inline-block;
+            padding: 8px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-left: 15px;
+            font-size: 1.2em;
+        }
+        
+        .fortune-type-badge.good {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #8b0000;
+        }
+        
+        .fortune-type-badge.middle {
+            background: linear-gradient(135deg, #87ceeb, #b0e0e6);
+            color: #1a5276;
+        }
+        
+        .fortune-type-badge.bad {
+            background: linear-gradient(135deg, #cd5c5c, #f08080);
+            color: white;
+        }
+        
+        .poem-box {
+            background: #f9f9f9;
+            border-left: 5px solid #d4af37;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 1.3em;
+            line-height: 2;
+            color: #333;
+            font-family: 'Noto Serif TC', serif;
+            white-space: pre-line;
+        }
+        
+        .meaning-box {
+            background: #fff3cd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .meaning-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .hk-aspects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .hk-aspect-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .hk-aspect-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .hk-aspect-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .hk-aspect-card h4 {
+            color: #8b0000;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .hk-aspect-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .advice-section {
+            background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        .advice-section h3 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+        
+        .advice-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .advice-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .advice-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .advice-list li::before {
+            content: '💡';
+            margin-right: 15px;
+            font-size: 1.3em;
+        }
+        
+        .blessing-banner {
+            background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+            padding: 25px;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        
+        .blessing-banner p {
+            color: #8b0000;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .action-btn.primary {
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            color: #8b0000;
+            font-weight: bold;
+        }
+        
+        .action-btn.secondary {
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+        }
+        
+        .action-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(212,175,55,0.4);
+        }
+        
+        .footer-section {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body class="hk-outlook-page">
+    <div class="outlook-header">
+        <h1>🇭🇰 香港來年展望</h1>
+        <p style="color: #5c0000; font-size: 1.2em; margin-top: 10px;">根據122車公籤文預測</p>
+        <div class="year-badge">{{ year }} 丙午馬年 🐴</div>
+    </div>
+
+    <div class="outlook-container">
+        <div class="fortune-source-info" style="background: linear-gradient(135deg, #d4af37, #ffd700); color: #8b0000; padding: 15px 25px; border-radius: 10px; margin-bottom: 20px; text-align: center; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            🎋 此展望根據您求得的第 {{ fortune.number }} 籤解讀
+        </div>
+        
+        <div class="fortune-highlight">
+            <div class="fortune-header">
+                <span class="fortune-number-large">第 {{ fortune.number }} 籤</span>
+                <span class="fortune-type-badge {{ 'good' if '上' in fortune.type else 'middle' if '中' in fortune.type else 'bad' }}">
+                    {{ fortune.type }}
+                </span>
+            </div>
+
+            <div class="poem-box">
+                {{ fortune.poem }}
+            </div>
+
+            <div class="meaning-box">
+                <h3>📜 解曰</h3>
+                <p>{{ fortune.meaning }}</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; color: #d4af37; margin: 40px 0 30px;">
+            🏙️ 香港各方面展望
+        </h2>
+
+        <div class="hk-aspects">
+            <div class="hk-aspect-card">
+                <div class="icon">📈</div>
+                <h4>經濟展望</h4>
+                <p>{{ fortune.hk_interpretation.economy if fortune.hk_interpretation else fortune.career.replace('事業', '經濟') }}</p>
+            </div>
+
+            <div class="hk-aspect-card">
+                <div class="icon">💰</div>
+                <h4>金融市場</h4>
+                <p>{{ fortune.hk_interpretation.finance if fortune.hk_interpretation else fortune.wealth }}</p>
+            </div>
+
+            <div class="hk-aspect-card">
+                <div class="icon">🤝</div>
+                <h4>社會氛圍</h4>
+                <p>{{ fortune.hk_interpretation.society if fortune.hk_interpretation else fortune.love.replace('感情', '社會') }}</p>
+            </div>
+
+            <div class="hk-aspect-card">
+                <div class="icon">🏥</div>
+                <h4>公共健康</h4>
+                <p>{{ fortune.hk_interpretation.health if fortune.hk_interpretation else fortune.health }}</p>
+            </div>
+        </div>
+
+        <div class="advice-section">
+            <h3>💡 來年建議</h3>
+            <ul class="advice-list">
+                {% if fortune.hk_interpretation %}
+                    {% for advice in fortune.hk_interpretation.advice %}
+                    <li>{{ advice }}</li>
+                    {% endfor %}
+                {% else %}
+                    <li>以守為攻 - 穩固現有基礎，不宜貿然改革</li>
+                    <li>審時度勢 - 耐心等待轉機，時機成熟再行動</li>
+                    <li>積聚實力 - 利用這段時間提升競爭力</li>
+                    <li>團結一致 - 社會各界同心協力，共渡時艱</li>
+                {% endif %}
+            </ul>
+        </div>
+
+        <div class="blessing-banner">
+            <p>🙏 車公大將軍保佑香港 🙏</p>
+            <p style="margin-top: 10px;">逆風之後必有順風，靜待時機，必有轉機！</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="/" class="action-btn primary">🎋 返回求籤</a>
+            <a href="/hk-outlook" class="action-btn secondary">🔄 以新籤文解讀</a>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <p>122車公 · 百年靈驗</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">此預測僅供參考，願香港繁榮穩定，市民平安喜樂</p>
+    </div>
+
+    <!-- 飄落花瓣效果 -->
+    <script>
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.innerHTML = '🌸';
+            petal.style.position = 'fixed';
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.top = '-50px';
+            petal.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            petal.style.opacity = Math.random() * 0.5 + 0.3;
+            petal.style.pointerEvents = 'none';
+            petal.style.zIndex = '1';
+            petal.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+            document.body.appendChild(petal);
+            setTimeout(() => petal.remove(), 5000);
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+        setInterval(createPetal, 3000);
+    </script>
+</body>
+</html>
